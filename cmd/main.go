@@ -14,6 +14,7 @@ func main() {
 	// connect databae in future
 	fmt.Println("Connect with db unsuccesfulyy... :) ")
 
+	// TODO: Repo takes database
 	userRepo := repositories.NewUserRepository()
 	userService := services.NewUserService(userRepo)
 	userHandler := handlers.NewUserHandler(userService)
